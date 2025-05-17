@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # fail on any error
-set -eu
+#set -eu
 
 # go back to the previous directory
 cd .. 
@@ -13,4 +13,4 @@ terraform init
 terraform apply -auto-approve
 
 # destroy terraform
-# terraform destroy -auto-approve
+terraform destroy -auto-approve
